@@ -243,13 +243,16 @@ nav{
   letter-spacing: -0.01em;
   margin-bottom: 32px;
 }
-form input{
+.form_msg input{
   padding: 4px 0 0 16px;
   margin-bottom: 8px;
   width: 288px;
   height: 52px;
 }
-textarea{
+.form_msg span{
+  display: none;
+}
+.form_msg textarea{
   padding: 18px;
   width: 288px;
   height: 122px;
@@ -275,7 +278,7 @@ footer{
   line-height: 24px;
 }
 .resume{
-  background-image: url(../images/ic_link_teal.svg);
+  background-image: url(../images/ic_download.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 30px;
