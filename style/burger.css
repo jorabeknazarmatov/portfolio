@@ -1,0 +1,30 @@
+.burger{
+  position: fixed;
+  width: 20px;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  cursor: pointer;
+}
+.burger span{
+  display: block;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100%;
+  margin: 5px auto;
+  height: 2px;
+  background: #FFF;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+.brg_one{
+  transform: rotateZ(-45deg);
+  top: 10px;
+}
+.brg_two{
+  opacity: 0;
+}
+.brg_thee{
+  transform: rotateZ(45deg);
+  bottom: 4px;
+}

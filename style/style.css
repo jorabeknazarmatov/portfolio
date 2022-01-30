@@ -1,0 +1,293 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+html{
+  scroll-behavior:smooth;
+}
+
+header, #contact{
+  padding-top: 104px;
+  background-image: url(../images/Shape.png), url(../images/Shape-1.png);
+  background-repeat: no-repeat;
+  background-position: 37px 0, 0 0;
+  background-color: #F9F9FA;
+}
+header{
+  background-color: #fff;
+  transition: .5s ease-in-out;
+}
+/** Navbar section start **/
+nav{
+  width: 100vw;
+  height: 100vh;
+  padding: 114px 127px;
+  background-color: #E5E5E5;
+  background-image: url(../images/Group_98.png), url(../images/Group_51.png), url(../images/image_geometry_menu_2.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0, 80% 12%,100% 100%;
+  transition: .5s ease-in-out;
+  position: fixed;
+  top: 0;  
+  z-index: 3;
+}
+.nav_hidden{
+  transform: translateX(100vw);
+}
+
+.nav_link{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+/** Navbar section end **/
+
+/** Welcome section  start. **/
+.hello{
+  padding: 32px 16px;
+  padding-top: 104px;
+  color: #1A2236;
+  font-family: Playfair Display, sans-serif;
+}
+.hello h1{
+  font-size: 50px;
+}
+.hello p{
+  font-size: 14px;
+  line-height: 21px;
+  padding: 20px 0 40px 0;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+.click{
+  width: 288px;
+  height: 50px;
+  background: #1A2236;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.get{
+  background-image: url(../images/ic_download.svg);
+  background-position: 80% 50%;
+  background-repeat: no-repeat;
+}
+.welcome_img img{
+  width: 100%;
+  height: 160px;
+}
+/** Welcome section  end. **/
+
+/** Project section  start. **/
+#projects{
+  padding-top: 40px;
+}
+#projects h2{
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  margin: auto auto 32px 18px;
+}
+.card{
+  background: #1A2236;
+}
+.card_img{
+  height: 186px;
+  overflow: hidden;
+}
+.card_title{
+  padding: 20px 50px 20px 20px;
+  color: #fff;
+}
+.card_title h3{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  margin-bottom: 16px;
+}
+.know button{
+  font-size: 10.3334px;
+  padding: 6px 10px;
+  color: #1A2236;
+  background: #98DEDE;
+  border: none;
+}
+.see{
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #FFFFFF;
+  background: #1A2236;
+  color: #fff;
+}
+.know{
+  display: flex;
+  justify-content: space-between;
+}
+.fa-arrow-right{
+  width: 20px;
+  margin: auto 15px;
+}
+/** Project section  end. **/
+
+/** About section  start. **/
+#about{
+  padding: 50px 16px;
+}
+.about_title h2{
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+.about_title p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A2236;
+  margin-bottom: 32px;
+}
+.about_title button{
+  margin-bottom: 24px;
+}
+.about_lang{
+  margin-top: 16px;
+  padding: 50px;
+  padding-bottom: 53px;
+  color: #FFF;
+  width: 289px;
+}
+.about_lang h3{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  width: 116px;
+  height: 30px;  
+  font-weight: bolder;
+}
+.about_lang ul{
+  height: auto;
+}
+.about_lang ul li{
+  cursor: pointer;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+}
+.one{
+  background-color: #1C528A;
+  background-image: url(../images/r.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+.two{
+  background-color: #E2505C;
+  background-image: url(../images/Group_18.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+.three{
+  background-color: #FEBF52;
+  background-image: url(../images/ic_skills.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+/** About section  end. **/
+
+/** Contact section  start. **/
+#contact{
+  padding: 104px 18px 64px 18px;
+}
+#contact h2{
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+#contact p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+}
+form input{
+  padding: 4px 0 0 16px;
+  margin-bottom: 8px;
+  width: 288px;
+  height: 52px;
+}
+textarea{
+  padding: 18px;
+  width: 288px;
+  height: 122px;
+  margin-bottom: 20px;
+}
+/** Contact section  end. **/
+
+/** Footer section  start. **/
+footer{
+  height: 150px;
+  background: #1A2236;
+  padding: 32px 16px;
+}
+.resume a{
+  color: #92DCDC;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.resume{
+  background-image: url(../images/ic_link_teal.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 30px;
+}
+.sotsial{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sotsial i{
+  color: #FFF;
+  font-size: 20px;
+}
+/** Footer section  end. **/
+
