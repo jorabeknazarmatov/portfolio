@@ -53,6 +53,17 @@
 	.hello p{
 		padding: 60px 0;
 	}
+
+/**  Projects section start  **/
+	
+	#projects{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		
+	}
+
+/**  About section start  **/
+
 	#about{
 		display: flex;
 		padding: 160px;
@@ -82,6 +93,7 @@
 		padding: 50px;
 	} 
 
+/**  Contact section start  **/
 
 	#contact{
 		padding: 135px 442px;
@@ -117,6 +129,9 @@
 		width: 100%;
 		height: 140px;
 	}
+
+/**  Footer start  **/
+
 	footer section{
 		display: flex;
 	}
