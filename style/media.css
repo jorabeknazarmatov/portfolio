@@ -1,4 +1,7 @@
 @media screen and (min-width: 321px) {
+	button{
+		cursor: pointer;
+	}
 	.burger{
 		display: none;
 	}
@@ -26,6 +29,9 @@
 		line-height: normal;
 		width: auto;
 	}
+
+/* Welcome section start */
+
 	#welcome{
 		display: flex;
 	}
@@ -54,16 +60,160 @@
 		padding: 60px 0;
 	}
 
-/**  Projects section start  **/
-	
+/* Project section start */
+
 	#projects{
 		display: grid;
-		grid-template-columns: 50% 50%;
-		
+		grid-template-rows: 558px 350px 465px 270px;
+		grid-template-columns: 465px 335px 640px;
+		background-image: url(../images/image_dots.png);
+		background-repeat: no-repeat;
+		background-position: 295px 50px;
+		margin-top: 200px;
+	}
+	#projects h2{
+		transform: rotateZ(-90deg);
+		position: relative;
+		bottom: 280px;
+		left: -50px;
+		font-size: 110px;	
+	}
+	.card{
+		background-color: #fff;
+		overflow: hidden;
+	}
+	.card img{
+		width: 100%;
+	}
+	.card_active{
+		transform: translateY(-100%);
+	}
+	.card_title{
+		padding: 60px;
+		background-color: #1a2236d3;
+		transition: .3s ease-in-out;
+	}
+	.card_title h3{
+		font-weight: bold;
+		font-size: 60px;
+		line-height: 80%;
+	}
+	.know{
+		display: block;
+	}
+	.know button{
+		padding: 12px 20px;
+		font-size: 20px;
+		line-height: 80%;
+		margin: 34px 20px 60px auto;
+	}
+	.see{
+		font-size: 18px;
+		line-height: 27px;
+		background-color: #fff;
+		color: #1A2236;
 	}
 
-/**  About section start  **/
+	.card:nth-child(2){
+		grid-column: 2/span 2;
+	}
+	.card:nth-child(3){
+		grid-column: 1/span 2;
+		background-image: url(../images/image-geometry_2.svg);
+		background-repeat: no-repeat;
+		background-position: 470px 95%;
+		padding-top: 80px;
+	}
+	.card:nth-child(5){
+		grid-column: 1/span 2;
+	}
+	.card:nth-child(7){
+		grid-column: 1/span 3;
+	}
 
+/* Card 1 start */
+
+	.card:nth-child(2) .card_img{
+		width: 975px;
+		height: 558px;	
+	}
+	.card:nth-child(2) .card_title{
+		bottom: 353px;
+	}
+	
+	
+/* Card 2 start *  * Card 3 start  *  * Card 5 start * * Card 6 start */
+
+	.card:nth-child(3) .card_title,
+	.card:nth-child(4) .card_title,
+	.card:nth-child(6) .card_title,
+	.card:nth-child(7) .card_title,
+	.card:nth-child(3) .card_img,
+	.card:nth-child(7) .card_img,
+	.card:nth-child(4) .card_img,
+	.card:nth-child(6) .card_img{
+		width: 465px;
+		height: 270px;
+	}
+	.card:nth-child(7) .card_title,
+	.card:nth-child(4) .card_title,
+	.card:nth-child(6) .card_title,
+	.card:nth-child(3) .card_title{
+		padding: 30px;
+		height: 240px;
+	}
+	.card:nth-child(3) .card_title h3,
+	.card:nth-child(7) .card_title h3,
+	.card:nth-child(4) .card_title h3,
+	.card:nth-child(6) .card_title h3{
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 80%;
+	}
+	.card:nth-child(7) .card_title button,
+	.card:nth-child(3) .card_title button,
+	.card:nth-child(4) .card_title button,
+	.card:nth-child(6) .card_title button{
+		font-size: 20px;
+		line-height: 80%;
+		margin: 5px;
+	}
+	.card:nth-child(6){
+		position: relative;
+		top: -75px;
+		background-image: url('../images/Group 53.svg'), url(../images/Group_83.svg), url(../images/Shape2.svg);
+		background-repeat: no-repeat;
+		background-position: 0 -100px, 290px 270px, 7px 367px;
+		height: 544px;
+	}
+	.card:nth-child(4),
+	.card:nth-child(6){
+		padding-left: 175px;
+	}
+	.card:nth-child(4){
+		background-image: url('../images/Shape.svg'),url('../images/Group 53.svg');
+		background-repeat: no-repeat;
+		background-position: -178px 0, 0 175px;
+	}
+	.card:nth-child(7){
+		padding-left: 799px;
+		background-image: url(../images/image-geometry_5.svg), url(../images/image-geometry_4.svg);
+		background-repeat: no-repeat;
+		background-position: 0 0, 710px 3px;
+	}
+
+/* Card 4 start */
+
+	.card:nth-child(5) .card_img{
+		width: 800px;
+		height: 465px;
+	}
+	.card:nth-child(5) .card_title{
+		width: 800px;
+		height: 350px;
+	}
+
+/* About section start */
 	#about{
 		display: flex;
 		padding: 160px;
@@ -93,7 +243,7 @@
 		padding: 50px;
 	} 
 
-/**  Contact section start  **/
+/* Contact section start */
 
 	#contact{
 		padding: 135px 442px;
@@ -148,4 +298,14 @@
 	footer a{
 		font-size: 24px;		
 	}
+
+/* Popup start */
+	.popup{
+		background-color: #1A2236;
+		padding: 70px;
+	}
+	.popup div{
+		background-color: #fff;
+	}
+
 }
