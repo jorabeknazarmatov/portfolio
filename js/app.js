@@ -4,6 +4,7 @@ const nav = document.querySelector('nav')
 const welcomeImg = document.querySelector('.welcome_img img')
 const about = document.querySelector('.about_cv')
 const card = document.querySelectorAll('.card')
+const see = document.querySelectorAll('.see')
 
 
 burger.addEventListener('click',()=>{
